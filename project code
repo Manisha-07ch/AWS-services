@@ -1,0 +1,453 @@
+<!-- ========================= index.html ========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make My Trip - Home</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial,sans-serif;
+    }
+
+    body{
+      background:#f4f7fb;
+    }
+
+    header{
+      background:linear-gradient(90deg,#003580,#0071c2);
+      padding:20px 50px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      color:white;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      font-size:18px;
+    }
+
+    nav a:hover{
+      color:#ffcc00;
+    }
+
+    .hero{
+      background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop') center/cover;
+      height:85vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+    }
+
+    .hero-content{
+      background:rgba(0,0,0,0.5);
+      padding:40px;
+      border-radius:15px;
+    }
+
+    .hero h2{
+      font-size:55px;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:22px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+      padding:40px;
+    }
+
+    .card{
+      background:white;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+    }
+
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+    }
+
+    .card-content h3{
+      color:#003580;
+      margin-bottom:10px;
+    }
+
+    footer{
+      background:#003580;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Make My Trip</h1>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="bus.html">Bus Booking</a>
+    <a href="hotel.html">Hotel Booking</a>
+    <a href="train.html">Train Booking</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>Explore The World With Us</h2>
+    <p>Book buses, hotels and trains at best prices</p>
+  </div>
+</section>
+
+<section class="cards">
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1200&auto=format&fit=crop">
+    <div class="card-content">
+      <h3>Bus Booking</h3>
+      <p>Book luxury and sleeper buses online.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200&auto=format&fit=crop">
+    <div class="card-content">
+      <h3>Hotel Booking</h3>
+      <p>Find luxury hotels and affordable stays.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?q=80&w=1200&auto=format&fit=crop">
+    <div class="card-content">
+      <h3>Train Booking</h3>
+      <p>Book train tickets quickly and securely.</p>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 Make My Trip Clone</p>
+</footer>
+
+</body>
+</html>
+
+<!-- ========================= bus.html ========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bus Booking</title>
+
+<style>
+body{
+  font-family:Arial;
+  background:#f4f7fb;
+  margin:0;
+}
+
+header{
+  background:#003580;
+  padding:20px;
+  color:white;
+  text-align:center;
+}
+
+nav a{
+  color:white;
+  margin:15px;
+  text-decoration:none;
+}
+
+.container{
+  max-width:800px;
+  margin:40px auto;
+  background:white;
+  padding:30px;
+  border-radius:15px;
+}
+
+input,select,button{
+  width:100%;
+  padding:12px;
+  margin-top:15px;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+
+button{
+  background:#0071c2;
+  color:white;
+  border:none;
+  font-size:18px;
+}
+
+img{
+  width:100%;
+  border-radius:15px;
+  margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Bus Booking</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="hotel.html">Hotel</a>
+<a href="train.html">Train</a>
+</nav>
+</header>
+
+<div class="container">
+
+<h2>Book Your Bus</h2>
+
+<input type="text" placeholder="From City">
+<input type="text" placeholder="To City">
+<input type="date">
+
+<select>
+<option>Select Bus Type</option>
+<option>AC Sleeper</option>
+<option>Luxury Volvo</option>
+<option>Non AC</option>
+</select>
+
+<button>Search Buses</button>
+
+<img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?q=80&w=1200&auto=format&fit=crop">
+
+</div>
+</body>
+</html>
+
+<!-- ========================= hotel.html ========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotel Booking</title>
+
+<style>
+body{
+  font-family:Arial;
+  background:#f4f7fb;
+  margin:0;
+}
+
+header{
+  background:#003580;
+  padding:20px;
+  color:white;
+  text-align:center;
+}
+
+nav a{
+  color:white;
+  margin:15px;
+  text-decoration:none;
+}
+
+.container{
+  max-width:800px;
+  margin:40px auto;
+  background:white;
+  padding:30px;
+  border-radius:15px;
+}
+
+input,select,button{
+  width:100%;
+  padding:12px;
+  margin-top:15px;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+
+button{
+  background:#0071c2;
+  color:white;
+  border:none;
+  font-size:18px;
+}
+
+img{
+  width:100%;
+  border-radius:15px;
+  margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Hotel Booking</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="bus.html">Bus</a>
+<a href="train.html">Train</a>
+</nav>
+</header>
+
+<div class="container">
+
+<h2>Book Your Hotel</h2>
+
+<input type="text" placeholder="Destination City">
+<input type="date">
+<input type="date">
+
+<select>
+<option>Select Room Type</option>
+<option>Single Room</option>
+<option>Double Room</option>
+<option>Luxury Suite</option>
+</select>
+
+<button>Search Hotels</button>
+
+<img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1200&auto=format&fit=crop">
+
+</div>
+
+</body>
+</html>
+
+
+<!-- ========================= train.html ========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Train Booking</title>
+
+<style>
+body{
+  font-family:Arial;
+  background:#f4f7fb;
+  margin:0;
+}
+
+header{
+  background:#003580;
+  padding:20px;
+  color:white;
+  text-align:center;
+}
+
+nav a{
+  color:white;
+  margin:15px;
+  text-decoration:none;
+}
+
+.container{
+  max-width:800px;
+  margin:40px auto;
+  background:white;
+  padding:30px;
+  border-radius:15px;
+}
+
+input,select,button{
+  width:100%;
+  padding:12px;
+  margin-top:15px;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+
+button{
+  background:#0071c2;
+  color:white;
+  border:none;
+  font-size:18px;
+}
+
+img{
+  width:100%;
+  border-radius:15px;
+  margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Train Booking</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="bus.html">Bus</a>
+<a href="hotel.html">Hotel</a>
+</nav>
+</header>
+
+<div class="container">
+
+<h2>Book Your Train</h2>
+
+<input type="text" placeholder="Departure Station">
+<input type="text" placeholder="Arrival Station">
+<input type="date">
+
+<select>
+<option>Select Train Class</option>
+<option>First Class</option>
+<option>Second Class</option>
+<option>AC Coach</option>
+</select>
+
+<button>Search Trains</button>
+
+<img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=1200&auto=format&fit=crop">
+
+</div>
+
+</body>
+</html>
+</body>
+</html>
+
+
+
+
