@@ -47,7 +47,6 @@ https://github.com/user-attachments/assets/c98bbd92-0e14-4ac1-a458-621152dd7611
 <img width="358" height="103" alt="image" src="https://github.com/user-attachments/assets/da003a0f-50e0-4c85-bfa2-b31e4b673472" />
 
 
-https://github.com/user-attachments/files/29283602/AWS.Web.Application.Deployment.Project.docx
 
 
    
