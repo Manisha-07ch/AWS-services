@@ -1,7 +1,6 @@
 # AWS-services
  1. creating ec2 instance
 https://github.com/user-attachments/assets/b87b5881-dc87-4a51-ac14-2646119f400c
-<img width="358" height="90" alt="image" src="https://github.com/user-attachments/assets/71a7f2cc-bd4e-4c8c-99ce-42894428ce62" />
 
 2. deploy website on ec2 server
  https://github.com/user-attachments/assets/e912db36-21bd-4d75-ab9d-6eca19d05eca
