@@ -46,7 +46,10 @@ https://github.com/user-attachments/assets/c98bbd92-0e14-4ac1-a458-621152dd7611
     https://github.com/user-attachments/assets/5ff6484a-505d-40be-b5ad-350f01db91b7
 <img width="358" height="103" alt="image" src="https://github.com/user-attachments/assets/da003a0f-50e0-4c85-bfa2-b31e4b673472" />
 
-
+11. programmatical access of aws
+     https://github.com/user-attachments/assets/697fa136-9939-4332-bfb5-42a920867f4a
+    
+    
 
 
    
