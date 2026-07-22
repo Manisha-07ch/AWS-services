@@ -42,8 +42,8 @@ https://github.com/user-attachments/assets/c98bbd92-0e14-4ac1-a458-621152dd7611
 12. programmatical access of aws
      https://github.com/user-attachments/assets/697fa136-9939-4332-bfb5-42a920867f4a
     
-    
-
+ 13. creating nat gateway    
+     https://github.com/user-attachments/assets/d6c4aa3f-6435-4690-983b-c33f0659f17b
 
    
 
